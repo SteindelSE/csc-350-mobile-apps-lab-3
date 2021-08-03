@@ -1,0 +1,67 @@
+<!--
+  Name: Derek Steindel
+  Date: 7/19/21
+  Assignment: Lab 3 - Option 2
+  Purpose: Allow user to lookup available fish from AC:NH
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Crossing: New Hope Fish Dictionary</title>
+
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="onLoadPage()">
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Animal Crossing:<br/>New Hope Fish Dictionary</h1>
+      </div>
+
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="../"> Fish Dictionary</a>
+          </li>
+          <li>
+            <a href="information.html" class="ui-btn-active ui-state-persist"
+              >How It Works</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <h2>Summary:</h2>
+        <p>
+          This app works by making calls to the
+          <a href="http://acnhapi.com/">Animal Crossing: New Horizons API</a>
+          provided by Alexis. It makes a call to the API to count the current
+          number of fish available. It sets the slider's maximum number to that
+          value. It then takes a fish ID, provided by the user as input. It
+          makes a call to the API using the fish ID to get the information for
+          that fish. Finally, it displays the fish's ID, name, and picture to
+          the user.
+        </p>
+        <h2>How To:</h2>
+        <ol>
+          <li>
+            Select a fish ID either by entering the ID or dragging the slider.
+          </li>
+          <li>Press the "Go!" button</li>
+        </ol>
+      </div>
+
+      <div data-role="footer">
+        <p>
+          <small>Copyright © 2021 - Derek Steindel</small>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

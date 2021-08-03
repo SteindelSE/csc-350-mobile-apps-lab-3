@@ -1,0 +1,85 @@
+<!--
+  Name: Derek Steindel
+  Date: 7/19/21
+  Assignment: Lab 3 - Option 2
+  Purpose: Allow user to lookup available fish from AC:NH
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Crossing: New Hope Fish Dictionary</title>
+
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="script.js"></script>
+  </head>
+  <body onload="onLoadPage()">
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Animal Crossing:<br/>New Hope Fish Dictionary</h1>
+      </div>
+
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="../" class="ui-btn-active ui-state-persist">
+              Fish Dictionary</a
+            >
+          </li>
+          <li>
+            <a href="information.html">How It Works</a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <label for="fishIdSlider">Fish ID:</label>
+        <input
+          type="range"
+          name="fishIdSlider"
+          id="fishIdSlider"
+          value="1"
+          min="1"
+          max="1"
+        />
+        <button id="gobutton">Go!</button>
+        <div id="fishInfo">
+          <img id="fishimage" src="media/empty.png" alt="Image of Fish" />
+          <table id="results">
+            <tr>
+              <th>ID:</th>
+              <td id="fishid"></td>
+            </tr>
+            <tr>
+              <th>Name:</th>
+              <td id="fishname"></td>
+            </tr>
+            <tr>
+              <th>Price:</th>
+              <td id="fishprice"></td>
+            </tr>
+            <tr>
+              <th>Fact:</th>
+              <td id="fishfact"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div data-role="footer">
+        <p>
+          <small>Copyright © 2021 - Derek Steindel</small>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

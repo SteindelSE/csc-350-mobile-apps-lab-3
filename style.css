@@ -1,0 +1,20 @@
+/*
+  Name: Derek Steindel
+  Date: 7/19/21
+  Assignment: Lab 3 - Option 2
+*/
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#fishimage {
+  display: block;
+  margin: auto;
+  width: 256px;
+  height: 128px;
+}
